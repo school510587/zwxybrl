@@ -35,10 +35,6 @@
 若您已自行安裝NVDA，可再套用形義點字相關表件，步驟如下：   
 (適用於NVDA 2022.4)
 
-https://raw.githubusercontent.com/school510587/zwxybrl/main/src/characterDescriptions.dic
-https://raw.githubusercontent.com/school510587/zwxybrl/main/src/zz-tw-cldr.ctb
-https://raw.githubusercontent.com/school510587/zwxybrl/main/src/zzh-tw---ncb_che.ctb
-
 1. 安裝好 NVDA 請先到桌面「用右鍵」點NVDA捷徑，選擇「開啟檔案位置(I)」
 2. 此時即打開 **「C:\Program Files (x86)\NVDA」** 這個資料夾。
 3. 然後請下載這些檔案到以下的資料夾，並且覆蓋原有的檔案：
