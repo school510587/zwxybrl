@@ -35,19 +35,24 @@
 若您已自行安裝NVDA，可再套用形義點字相關表件，步驟如下：   
 (適用於NVDA 2022.4)
 
+https://raw.githubusercontent.com/school510587/zwxybrl/main/src/characterDescriptions.dic
+https://raw.githubusercontent.com/school510587/zwxybrl/main/src/zz-tw-cldr.ctb
+https://raw.githubusercontent.com/school510587/zwxybrl/main/src/zzh-tw---ncb_che.ctb
+
 1. 安裝好 NVDA 請先到桌面「用右鍵」點NVDA捷徑，選擇「開啟檔案位置(I)」
 2. 此時即打開 **「C:\Program Files (x86)\NVDA」** 這個資料夾。
 3. 然後請下載這些檔案到以下的資料夾，並且覆蓋原有的檔案：
-    1. 進行以下複製動作時, WINDOWS可能要求您:提供系統管理員權限, 請按「繼續」
-    2. [characterDescriptions.dic](src/characterDescriptions.dic)：   
+    1. 進行以下複製動作時, WINDOWS可能要求您:提供系統管理員權限, 請按「繼續」  
+        同時您需要對該檔案選:右鍵/另存
+    2. [characterDescriptions.dic](https://raw.githubusercontent.com/school510587/zwxybrl/main/src/characterDescriptions.dic)：   
         這是字詞解釋檔，請把這個檔案放到 **「locale\zh_TW」** 資料夾，  
         為與原「字詞解釋檔」的稱呼方式有所區別，日後我們將此檔案  
         稱為「形義詞解檔」。
-    3. [zzh-tw---ncb_che.ctb](src/zzh-tw---ncb_che.ctb)：   
+    3. [zzh-tw---ncb_che.ctb](https://raw.githubusercontent.com/school510587/zwxybrl/main/src/zzh-tw---ncb_che.ctb)：   
         倉頡形義點字表，請將此檔案貼到  
         **「C:\Program Files (x86)\NVDA\louis\tables」**，  
         這才是形義點字表最主要的檔案。
-    4. [zz-tw-cldr.ctb](src/zz-tw-cldr.ctb)：  
+    4. [zz-tw-cldr.ctb](https://raw.githubusercontent.com/school510587/zwxybrl/main/src/zz-tw-cldr.ctb)：  
         表情符號點字表。同樣也請貼到  
         **「C:\Program Files (x86)\NVDA\louis\tables」**  
         這個資料夾。
