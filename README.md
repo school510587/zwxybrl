@@ -30,7 +30,7 @@
 
 ### 方法一「新手快速法」
 
-您可直接下載這裡的[形義點字 NVDA 壓縮檔](http://molerat.net/~goad/ncb/ncb_nvda.7z)。
+您可直接下載這裡的[形義點字 NVDA 壓縮檔](https://github.com/school510587/zwxybrl/releases/download/V1.0/ncb_nvda.7z)。
 
 解壓後執行裡面的 nvda.exe 程式檔, 配合點顯器, 即可使用形義點字。
 
