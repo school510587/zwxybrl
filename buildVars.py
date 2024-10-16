@@ -85,7 +85,15 @@ markdownExtensions = []
 # contracted (contracted (True) or uncontracted (False) braille code),
 # output (shown in output table list),
 # input (shown in input table list).
-brailleTables = {}
+brailleTables = {
+	"zwxybrl.ctb": {
+		# Translators: Name of the braille translation table provided by the add-on
+		"displayName": _("Chinese XingYi Braille"),
+		"contracted": False,
+		"output": True,
+		"input": False,
+	},
+}
 
 # Custom speech symbol dictionaries
 # Symbol dictionary files reside in the locale folder, e.g. `locale\en`, and are named `symbols-<name>.dic`.
