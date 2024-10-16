@@ -1,0 +1,35 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the zwxybrl package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: zwxybrl 24.10\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
+"POT-Creation-Date: 2024-10-17 06:18+0800\n"
+"PO-Revision-Date: 2024-10-17 06:52+0800\n"
+"Language-Team: NVDA-Taiwan Volunteers Team\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh_TW\n"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
+#. Translators: Name of the braille translation table provided by the add-on
+#: buildVars.py:23 buildVars.py:91
+msgid "Chinese XingYi Braille"
+msgstr "中文形義點字"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#: buildVars.py:26
+msgid ""
+"A set of braille tables and character descriptions enabling users to read/"
+"write Chinese by structure and meaning."
+msgstr "點字轉譯表跟字元解釋的組合，讓使用者可以靠著字形與字義來讀寫中文。"
