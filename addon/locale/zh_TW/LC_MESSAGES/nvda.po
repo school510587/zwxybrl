@@ -7,22 +7,31 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zwxybrl 24.10\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
-"POT-Creation-Date: 2024-10-17 06:18+0800\n"
-"PO-Revision-Date: 2024-10-17 06:52+0800\n"
+"POT-Creation-Date: 2024-10-22 05:15+0800\n"
+"PO-Revision-Date: 2024-10-22 05:23+0800\n"
+"Last-Translator: \n"
 "Language-Team: NVDA-Taiwan Volunteers Team\n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.2.3\n"
-"Last-Translator: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Language: zh_TW\n"
+
+#: addon\globalPlugins\zwxybrl\__init__.py:50
+msgid "Quickly switches between XingYi braille and the current braille"
+msgstr "快速在形義點字與目前的點字之間切換"
+
+#: addon\globalPlugins\zwxybrl\__init__.py:68
+#, python-brace-format
+msgid "The braille output translation table has been changed to: {0}"
+msgstr "點字輸出轉譯表已經改變成：{0}"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on
 #. to be shown on installation and add-on information found in Add-ons Manager.
 #. Translators: Name of the braille translation table provided by the add-on
-#: buildVars.py:23 buildVars.py:91
+#: buildVars.py:23 buildVars.py:94
 msgid "Chinese XingYi Braille"
 msgstr "中文形義點字"
 
