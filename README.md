@@ -82,3 +82,5 @@
 - 許意明 &lt;<xymweb@gmail.com>&gt;
 
 ### 其他貢獻者
+
+- 蔡宗豪 Victor Cai &lt;<surfer0627@gmail.com>&gt;
