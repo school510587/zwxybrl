@@ -51,7 +51,7 @@
 
 # U.S. English 8 dot Computer braille table
 include en-us-comp8.ctb
-include zzh-tw---ncb_che.ctb
+include zzh-tw---ncb_che.ctb # 引入倉頡形義點字主檔名
 
 #begin Basic Latin (U+0000-U+007F)
 space \t 0-0-0-0
