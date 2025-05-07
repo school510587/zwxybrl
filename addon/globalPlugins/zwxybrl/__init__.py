@@ -1,4 +1,4 @@
-# Copyright (C) 2024 ZhongWen XingYi Braille Core Team
+# Copyright (C) 2024-2025 ZhongWen XingYi Braille Core Team
 
 import os
 
