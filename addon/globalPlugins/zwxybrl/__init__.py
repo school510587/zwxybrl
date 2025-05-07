@@ -15,6 +15,11 @@ import ui
 
 addonHandler.initTranslation()
 
+xybrl_bimap = {
+    "zh-tw.ctb": "zwxybrl.ctb",
+    "zwxybrl.ctb": "zh-tw.ctb",
+}
+
 class CustomCharacterDescriptions(characterProcessing.CharacterDescriptions):
     def __init__(self, locale: str):
         old_appDir = globalVars.appDir
@@ -45,27 +50,19 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
     def __init__(self, *args, **kwargs):
         super(GlobalPlugin, self).__init__(*args, **kwargs)
         characterProcessing._charDescLocaleDataMap = CustomLocaleDataMap(characterProcessing.CharacterDescriptions)
-        self.originalBRLtable = None
     @script(
         description=_("Quickly switches between XingYi braille and the current braille"),
         category=addonHandler.getCodeAddon().manifest["summary"],
     )
     def script_quickSwitchWithXYbrl(self, gesture):
-        try:
-            xyBRLtable = getBRLtable("zwxybrl.ctb")
-        except:
-            log.error("Failed to read the XingYi braille table.", exc_info=True)
-            playErrorSound()
+        if braille.handler.table.fileName not in xybrl_bimap:
+            ui.message("No matching XingYi braille output translation table.")
             return
         try:
-            if braille.handler.table is not xyBRLtable:
-                braille.handler.table, self.originalBRLtable = xyBRLtable, braille.handler.table
-            elif self.originalBRLtable is not None and self.originalBRLtable is not xyBRLtable:
-                braille.handler.table, self.originalBRLtable = self.originalBRLtable, None
-            else: # The user has never set the braille output translation table to any other table since NVDA started.
-                bopomofoBRLtable = getBRLtable("zh-tw.ctb")
-                braille.handler.table, self.originalBRLtable = bopomofoBRLtable, None
-            ui.message(_("The braille output translation table has been changed to: {0}").format(braille.handler.table.displayName))
+            target = getBRLtable(xybrl_bimap[braille.handler.table.fileName])
         except:
-            log.error("script_quickSwitchWithXYbrl performs no action.", exc_info=True)
+            log.error(f"Failed to find the target braille table: {braille.handler.table.fileName}", exc_info=True)
             playErrorSound()
+            return
+        braille.handler.table = target
+        ui.message(_("The braille output translation table has been changed to: {0}").format(braille.handler.table.displayName))
