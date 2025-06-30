@@ -89,9 +89,23 @@ markdownExtensions = []
 # output (shown in output table list),
 # input (shown in input table list).
 brailleTables = {
-	"zwxybrl.ctb": {
-		# Translators: Name of the braille translation table provided by the add-on
+	"zzh-tw---ncb_che.ctb": {
+		# Translators: Name of the XingYi braille translation table
 		"displayName": _("Chinese XingYi Braille"),
+		"contracted": False,
+		"output": True,
+		"input": False,
+	},
+	"zz-nosp.ctb": {
+		# Translators: Name of the XingYi braille (without bopomofo) translation table
+		"displayName": _("Chinese XingYi Braille (without bopomofo)"),
+		"contracted": False,
+		"output": True,
+		"input": False,
+	},
+	"zzh-tw---char.ctb": {
+		# Translators: Name of the XingYi braille translation table (helper version for character descriptions)
+		"displayName": _("Chinese XingYi Braille (helper version for character descriptions)"),
 		"contracted": False,
 		"output": True,
 		"input": False,

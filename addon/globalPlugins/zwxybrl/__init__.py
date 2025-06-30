@@ -16,8 +16,10 @@ import ui
 addonHandler.initTranslation()
 
 xybrl_bimap = {
-    "zh-tw.ctb": "zwxybrl.ctb",
-    "zwxybrl.ctb": "zh-tw.ctb",
+    "zh-tw.ctb": "zzh-tw---ncb_che.ctb",
+    "zzh-tw---ncb_che.ctb": "zh-tw.ctb",
+    "zz-nosp.ctb": "zh-tw.ctb",
+    "zzh-tw---char.ctb": "zh-tw.ctb",
 }
 
 class CustomCharacterDescriptions(characterProcessing.CharacterDescriptions):
@@ -37,7 +39,7 @@ class CustomLocaleDataMap(characterProcessing.LocaleDataMap):
         self._xyCharDescLocaleDataMap = characterProcessing.LocaleDataMap(CustomCharacterDescriptions)
     def fetchLocaleData(self, locale: str, *args, **kwargs):
         try:
-            if locale == "zh_TW" and braille.handler.table is getBRLtable("zwxybrl.ctb"):
+            if locale == "zh_TW" and braille.handler.table in map(getBRLtable, set(xybrl_bimap) - {"zh-tw.ctb"}):
                 return self._xyCharDescLocaleDataMap.fetchLocaleData(locale, *args, **kwargs)
         except:
             log.error("Failed to read XingYi character descriptions", exc_info=True)
